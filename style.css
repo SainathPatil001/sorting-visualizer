@@ -18,7 +18,7 @@ body {
   /* border: 1px solid #fff; */
   width: 80%;
   height: 350px;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   box-shadow: 2px 3px 10px 2px rgb(57 61 141);
   border-radius: 15px;
   display: flex;
@@ -208,6 +208,26 @@ body {
   height: 20px;
   width: 20px;
   animation: bubble 45s linear infinite;
+}
+
+p{
+  margin:0;
+  padding:0.5em;
+  text-align:center;
+}
+
+.logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:1.5em;
+  font-weight: bold;
+}
+
+.logo a{
+  text-decoration:none;
+  color:rgb(0, 255, 157);
 }
 
 @media (max-width: 450px) {
