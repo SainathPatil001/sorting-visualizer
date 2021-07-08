@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #4e54c8;
-  height: 90vh;
+  height: auto;
   width: 100%;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
@@ -17,7 +17,7 @@ body {
 .array-container {
   /* border: 1px solid #fff; */
   width: 80%;
-  height: 350px;
+  height: 300px;
   margin: 1.5rem auto;
   box-shadow: 2px 3px 10px 2px rgb(57 61 141);
   border-radius: 15px;
