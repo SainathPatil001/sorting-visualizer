@@ -247,6 +247,10 @@ p{
   }
   .array-container{
     margin:1.5em auto;
+    height:250px
+  }
+  .logo{
+    margin-top: 10px;
   }
 }
 
