@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting visualizers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="bubbles">
+      <div class="bubble bubble-1"></div>
+      <div class="bubble bubble-2"></div>
+      <div class="bubble bubble-3"></div>
+      <div class="bubble bubble-4"></div>
+      <div class="bubble bubble-5"></div>
+      <div class="bubble bubble-6"></div>
+      <div class="bubble bubble-7"></div>
+      <div class="bubble bubble-8"></div>
+      <div class="bubble bubble-9"></div>
+      <div class="bubble bubble-10"></div>
+  </div>
+    <div class="area">
+
+      <div class="container">
+        <div class="array-container"></div>
+      </div>
+
+  
+
+      <div class="sortingAlgorithms">
+        <button class="btn" data-value="bubbleSort" >Bubble Sort</button>
+        <button class="btn" data-value="selectionSort">Selection Sort</button>
+        <button class="btn" data-value="insertionSort">Insertion Sort</button>
+        <button class="btn" data-value="mergeSort">Merge Sort</button>
+        <button id="sort" class=" btn-sort" >Sort</button>
+      </div>
+      <div class="controls">
+      
+
+       <div class="controls">
+         <button id="randomize"  >Randomize</button>
+
+        <div class="arraySize">
+          <label for="arraySize" class="arraySizeLabel">Array Size</label>
+          <input
+            type="range"
+            min="5"
+            max="60"
+            value="10"
+            class="inputArraySize"
+            id="range"
+            name="arraySize"
+            
+          />
+        </div>
+        <div class="Speed">
+          <label for="speed" class="arraySizeLabel">Speed</label>
+          <input
+            type="range"
+            min="100"
+            max="900"
+            value="500"
+            class="inputSpeed"
+            id="range"
+            name="speed"
+          />
+        </div>
+      </div>
+      </div>
+
+     
+    </div>
+s
+    <script src="bubbleSort.js"></script>
+    <script src="selectionSort.js"></script>
+    <script src="insertionSort.js"></script>
+    <script src="mergeSort.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #4e54c8;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.area {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.array-container {
+  /* border: 1px solid #fff; */
+  width: 80%;
+  height: 350px;
+  margin: 3rem auto;
+  box-shadow: 2px 3px 10px 2px rgb(57 61 141);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.7em;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+.array-container div {
+  /* border: 1px solid #fff; */
+  width: 3px;
+  /* height:10px; */
+  background-color: #00bfff;
+  border-radius: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.btn {
+  background-color: rgba(62, 67, 161, 0.685);
+  margin: 5px 10px;
+  padding: 5px 20px;
+  color: #ccc;
+  font-size: 1em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.sortingAlgorithms {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.arraySizeLabel {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+}
+
+.arraySize {
+  margin-left: 20px;
+}
+
+.btn-sort {
+  background-color: #00fa9a;
+  color: #000;
+  margin-left: 2em;
+  cursor: pointer;
+  margin: 5px 10px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-size: 1em;
+  border: none;
+}
+
+.btn-sort:hover {
+  transform: scale(1.2);
+}
+.selected {
+  color: rgb(87, 1, 87);
+  background-color: #bbbdeb;
+  box-shadow: 1px 1px 1px 1px purple;
+}
+
+#randomize {
+  background-color: rgba(241, 0, 0, 0.925);
+  margin: 5px 10px;
+  padding: 5px 20px;
+  color: #ccc;
+  font-size: 1em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+#randomize:hover {
+  transform: scale(1.2);
+  
+}
+
+.bubbles {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -200px;
+}
+
+.bubble {
+  background-color: #f8f9fa;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0.1;
+  }
+}
+.bubble-1 {
+  height: 150px;
+  width: 150px;
+  animation: bubble 37s linear infinite;
+  border-radius: 20px;
+  animation-delay: 12s;
+
+}
+.bubble-2 {
+  height: 50px;
+  width: 50px;
+  animation: bubble 29s linear infinite;
+  border-radius: 10px;
+  animation-delay: 16s;
+
+}
+.bubble-3 {
+  animation-delay: 5s;
+  height: 75px;
+  width: 75px;
+  animation: bubble 26s linear infinite;
+  border-radius: 20px;
+}
+.bubble-4 {
+  animation-delay: 3s;
+  height: 100px;
+  width: 100px;
+  animation: bubble 30s linear infinite;
+  border-radius: 15px;
+}
+
+.bubble-5 {
+  animation-delay: 12.5s;
+  height: 50px;
+  width: 50px;
+  animation: bubble 20s linear infinite;
+  border-radius: 10px;
+}
+.bubble-6 {
+  animation-delay: 15s;
+  height: 80px;
+  width: 80px;
+  animation: bubble 25s linear infinite;
+}
+.bubble-7 {
+  animation-delay: 10s;
+  height: 10px;
+  width: 10px;
+  animation: bubble 38s linear infinite;
+}
+.bubble-8 {
+  animation-delay: 8s;
+  height: 30px;
+  width: 30px;
+  animation: bubble 30s linear infinite;
+}
+.bubble-9 {
+  animation-delay: 3s;
+  height: 80px;
+  width: 80px;
+  animation: bubble 50s linear infinite;
+}
+.bubble-10 {
+  animation-delay: 5s;
+  height: 20px;
+  width: 20px;
+  animation: bubble 45s linear infinite;
+}
+
+@media (max-width: 450px) {
+  .array-container div {
+    /* border: 1px solid #fff; */
+    width: 3px;
+    /* height:10px; */
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .controls{
+    margin:0
+  }
+  .sortingAlgorithms{
+    margin:1em
+  }
+  .array-container{
+    margin:1.5em auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .array-container div {
+    /* border: 1px solid #fff; */
+    width: 6px;
+    /* height:10px; */
+  }
+
+  .btn-sort {
+    padding: 3px 15px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .array-container div {
+    /* border: 1px solid #fff; */
+    width: 16px;
+    /* height:10px; */
+  }
+}
