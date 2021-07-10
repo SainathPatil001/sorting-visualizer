@@ -36,8 +36,11 @@ async function handleSort() {
 
   let buttons = document.querySelectorAll(".btn");
   const inputArraySize = document.querySelector(".inputArraySize");
+  const randomize = document.querySelector("#randomize");
+  randomize.setAttribute("disabled", "true");
   buttons.forEach((btn) => btn.setAttribute("disabled", "true"));
   inputArraySize.setAttribute("disabled", "true");
+
   sort.setAttribute("disabled","true")
     
   if(sortMethod=="bubbleSort")
@@ -64,6 +67,8 @@ async function handleSort() {
      buttons.forEach(btn=>btn.removeAttribute("disabled"))
      inputArraySize.removeAttribute("disabled");
      sort.removeAttribute("disabled");
+     const randomize = document.querySelector("#randomize");
+     randomize.removeAttribute("disabled");
   }
 }
 

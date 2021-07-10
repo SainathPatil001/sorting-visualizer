@@ -230,6 +230,15 @@ p{
   color:rgb(0, 255, 157);
 }
 
+
+
+
+@media(max-width:400px){
+  .array-container{
+    margin: 1.1em auto;
+    height: 170px;
+  }
+}
 @media (max-width: 450px) {
   .array-container div {
     /* border: 1px solid #fff; */

@@ -46,7 +46,8 @@ async function bubbleSort() {
           buttons.forEach(btn=>btn.removeAttribute("disabled"))
           inputArraySize.removeAttribute("disabled");
           sort.removeAttribute("disabled");
-
+          const randomize = document.querySelector("#randomize");
+          randomize.removeAttribute("disabled");
           console.log("Berlin");
         
         }
